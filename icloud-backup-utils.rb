@@ -1,14 +1,14 @@
 class IcloudBackupUtils < Formula
   desc "Scripts creating backups of iCloud data."
   homepage "https://github.com/josh/icloud-backup-utils"
-  url "https://github.com/josh/icloud-backup-utils/archive/v0.1.0.tar.gz"
-  sha256 "3a64db6a219be6656f6a3f25d4002c131d84d966ed2649ed55d2faec13a55222"
+  url "https://github.com/josh/icloud-backup-utils/archive/v0.1.1.tar.gz"
+  sha256 "ead0b4cdd45bb778840bd18a396e1245c210cdb51616d2088aa958b72cd6afeb"
   head "https://github.com/josh/icloud-backup-utils.git"
 
   def install
     bin.install "icloud-backup"
   end
-  
+
   plist_options :manual => "icloud-backup"
 
   def plist; <<~EOS
