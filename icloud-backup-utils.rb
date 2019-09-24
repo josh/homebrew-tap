@@ -1,8 +1,8 @@
 class IcloudBackupUtils < Formula
   desc "Scripts creating backups of iCloud data."
   homepage "https://github.com/josh/icloud-backup-utils"
-  url "https://github.com/josh/icloud-backup-utils/archive/v0.1.1.tar.gz"
-  sha256 "ead0b4cdd45bb778840bd18a396e1245c210cdb51616d2088aa958b72cd6afeb"
+  url "https://github.com/josh/icloud-backup-utils/archive/v0.1.2.tar.gz"
+  sha256 "68f938ce98c13065513e74e5dcd6d7237635905decacf35b941179aac74a3a56"
   head "https://github.com/josh/icloud-backup-utils.git"
 
   def install
