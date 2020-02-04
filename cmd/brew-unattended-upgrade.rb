@@ -50,6 +50,9 @@ def run(*args, label:, notify_on: NOTIFY_FAILURE)
 end
 
 
+puts ""
+safe_system "date" 
+
 if `pmset -g batt` =~ /Battery Power/
   puts "skipping brew unattended-upgrade on battery"
   exit 0
