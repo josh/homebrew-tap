@@ -3,7 +3,7 @@
 MAS = which("mas")
 NOTIFER = which("terminal-notifier")
 bundle_file = ENV["HOMEBREW_BUNDLE_FILE"]
-bundle_file = nil if !File.exist?(bundle_file)
+bundle_file = nil if bundle_file && !File.exist?(bundle_file)
 
 def notify(message:, subtitle: nil, execute: nil, terminal: nil)
   return unless NOTIFER
@@ -52,7 +52,7 @@ end
 
 
 puts ""
-safe_system "date" 
+safe_system "date"
 
 if `pmset -g batt` =~ /Battery Power/
   puts "skipping brew unattended-upgrade on battery"
