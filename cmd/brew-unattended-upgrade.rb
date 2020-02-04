@@ -2,7 +2,7 @@
 
 MAS = which("mas")
 NOTIFER = which("terminal-notifier")
-bundle_file = ENV["HOMEBREW_BUNDLE_FILE"]
+bundle_file = ENV["HOMEBREW_BUNDLE_FILE"] || "#{HOMEBREW_PREFIX}/etc/Brewfile"
 bundle_file = nil if bundle_file && !File.exist?(bundle_file)
 
 def notify(message:, subtitle: nil, execute: nil, terminal: nil)
@@ -78,3 +78,5 @@ if bundle_file
     label: "brew bundle cleanup",
     notify_on: ->(r) { r[:output] != "" }
 end
+
+ohai "success"

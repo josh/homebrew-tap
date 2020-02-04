@@ -7,7 +7,11 @@ class BrewUnattendedUpgrade < Formula
   depends_on "terminal-notifier"
 
   def install
-    system "touch", prefix + "ok"
+    (bin/"brew-unattended-upgrade").write <<~EOF
+      #!/bin/sh
+      exec brew unattended-upgrade
+    EOF
+    chmod 0755, bin/"brew-unattended-upgrade"
   end
 
   plist_options :manual => "brew unattended-upgrade"
@@ -28,8 +32,6 @@ class BrewUnattendedUpgrade < Formula
         <dict>
           <key>PATH</key>
           <string>/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin</string>
-          <key>HOMEBREW_BUNDLE_FILE</key>
-          <string>#{HOMEBREW_PREFIX}/etc/Brewfile</string>
         </dict>
         <key>RunAtLoad</key>
         <true/>
