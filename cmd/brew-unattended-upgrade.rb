@@ -3,6 +3,7 @@
 MAS = which("mas")
 NOTIFER = which("terminal-notifier")
 bundle_file = ENV["HOMEBREW_BUNDLE_FILE"]
+bundle_file = nil if !File.exist?(bundle_file)
 
 def notify(message:, subtitle: nil, execute: nil, terminal: nil)
   return unless NOTIFER
