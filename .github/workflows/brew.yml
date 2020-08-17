@@ -1,0 +1,14 @@
+name: Homebrew
+
+on: [push]
+
+jobs:
+  audit:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Audit formulas
+        run: |
+          brew audit --strict --online ./csv2json.rb
