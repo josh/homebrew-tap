@@ -9,6 +9,11 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Install Homebrew bundler gems
+        run: brew --env
+        env:
+          HOMEBREW_INSTALL_BUNDLER_GEMS_FIRST: 1
+
       - name: Audit formulas
         run: |
           brew audit --strict --online ./csv2json.rb
