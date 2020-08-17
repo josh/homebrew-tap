@@ -10,7 +10,7 @@ class Displayrcd < Formula
     bin.install ".build/release/displayrcd"
   end
 
-  plist_options :manual => "displayrcd"
+  plist_options manual: "displayrcd"
 
   def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
