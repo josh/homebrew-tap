@@ -11,4 +11,8 @@ class SwiftCompletions < Formula
     bash_completion.install "bash" => "swift"
     zsh_completion.install "zsh" => "_swift"
   end
+
+  test do
+    42
+  end
 end
