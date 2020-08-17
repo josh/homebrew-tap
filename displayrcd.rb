@@ -12,27 +12,28 @@ class Displayrcd < Formula
 
   plist_options manual: "displayrcd"
 
-  def plist; <<~EOS
-    <?xml version="1.0" encoding="UTF-8"?>
-    <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-    <plist version="1.0">
-      <dict>
-        <key>Label</key>
-        <string>#{plist_name}</string>
-        <key>ProgramArguments</key>
-        <array>
-          <string>#{opt_bin}/displayrcd</string>
-        </array>
-        <key>StandardErrorPath</key>
-        <string>#{var}/log/displayrcd.log</string>
-        <key>StandardOutPath</key>
-        <string>#{var}/log/displayrcd.log</string>
-        <key>KeepAlive</key>
-        <true/>
-        <key>RunAtLoad</key>
-        <true/>
-      </dict>
-    </plist>
+  def plist
+    <<~EOS
+      <?xml version="1.0" encoding="UTF-8"?>
+      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+      <plist version="1.0">
+        <dict>
+          <key>Label</key>
+          <string>#{plist_name}</string>
+          <key>ProgramArguments</key>
+          <array>
+            <string>#{opt_bin}/displayrcd</string>
+          </array>
+          <key>StandardErrorPath</key>
+          <string>#{var}/log/displayrcd.log</string>
+          <key>StandardOutPath</key>
+          <string>#{var}/log/displayrcd.log</string>
+          <key>KeepAlive</key>
+          <true/>
+          <key>RunAtLoad</key>
+          <true/>
+        </dict>
+      </plist>
     EOS
   end
 
