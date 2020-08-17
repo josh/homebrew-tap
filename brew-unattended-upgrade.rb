@@ -14,7 +14,7 @@ class BrewUnattendedUpgrade < Formula
     chmod 0755, bin/"brew-unattended-upgrade"
   end
 
-  plist_options :manual => "brew unattended-upgrade"
+  plist_options manual: "brew unattended-upgrade"
 
   def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
