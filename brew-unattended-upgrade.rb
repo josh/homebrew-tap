@@ -47,4 +47,8 @@ class BrewUnattendedUpgrade < Formula
       </plist>
     EOS
   end
+  
+  test do
+    true
+  end
 end
