@@ -1,5 +1,6 @@
 class BrewUnattendedUpgrade < Formula
   desc "Homebrew unattended upgrade service"
+  homepage "https://github.com/josh/homebrew-tap/blob/master/cmd/brew-unattended-upgrade.rb"
   url "https://blank.org"
   version "0.1.0"
   sha256 "69917e3a76d270be4e4f07ce97f008b3a48e9cf5cc2283e44c7f69797a21918f"
