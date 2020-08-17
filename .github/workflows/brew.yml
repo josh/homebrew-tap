@@ -31,6 +31,9 @@ jobs:
       - name: Update Homebrew
         run: brew update
 
+      - name: Install tap
+        run: brew tap josh/tap
+
       - name: Install Homebrew livecheck
         run: brew tap homebrew/livecheck
 
