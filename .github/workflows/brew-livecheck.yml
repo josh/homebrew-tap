@@ -1,0 +1,39 @@
+name: Homebrew Livecheck
+
+on:
+  schedule:
+    - cron: "0 9 * * *"
+
+jobs:
+  bump:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Update Homebrew
+        run: brew update
+
+      - name: Install tap
+        run: brew tap josh/tap
+
+      - name: Install Homebrew livecheck
+        run: brew tap homebrew/livecheck
+
+      - name: Check if formulas are outdated
+        run: brew livecheck
+        env:
+          HOMEBREW_LIVECHECK_WATCHLIST: brew_livecheck_watchlist
+
+      - name: Update outdated formulas
+        run: script/bump-outdated-formula
+
+      - name: Commit formula changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'joshbot@users.noreply.github.com'
+          git add *.rb
+          git commit --message "Update formulas" || true
+
+      - name: Push changes
+        run: git push
