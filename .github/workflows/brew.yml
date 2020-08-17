@@ -29,6 +29,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Update Homebrew
+        run: brew update
+
       - name: Install Homebrew livecheck
         run: brew tap homebrew/livecheck
 
