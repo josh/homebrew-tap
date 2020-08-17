@@ -1,5 +1,5 @@
 class IcloudBackupUtils < Formula
-  desc "Scripts creating backups of iCloud data."
+  desc "Scripts creating backups of iCloud data"
   homepage "https://github.com/josh/icloud-backup-utils"
   url "https://github.com/josh/icloud-backup-utils/archive/v0.1.3.tar.gz"
   sha256 "0bff0e4af541b2912a980b4b5c822a6b185dd2758fe6bcca1d5a5c6cf75fdaac"
