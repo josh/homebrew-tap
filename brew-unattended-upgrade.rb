@@ -49,6 +49,6 @@ class BrewUnattendedUpgrade < Formula
   end
 
   test do
-    true
+    42
   end
 end
