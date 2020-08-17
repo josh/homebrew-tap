@@ -21,3 +21,4 @@ jobs:
           brew audit --strict --online ./displayrcd.rb
           brew audit --strict --online ./icloud-backup-utils.rb
           brew audit --strict --online ./sort-lines.rb
+          brew audit --strict --online ./swift-completions.rb
