@@ -40,6 +40,9 @@ jobs:
         env:
           HOMEBREW_LIVECHECK_WATCHLIST: brew_livecheck_watchlist
 
+      - name: Update outdated formulas
+        run: script/bump-outdated-formula
+
       - name: Commit formula changes
         run: |
           git config --global user.name 'GitHub Actions'

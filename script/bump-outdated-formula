@@ -1,0 +1,9 @@
+#!/bin/bash
+
+set -euf -o pipefail
+set -x
+
+export HOMEBREW_LIVECHECK_WATCHLIST=brew_livecheck_watchlist
+brew livecheck --json --newer-only |
+  jq --raw-output '.[] | "brew bump-formula-pr --dry-run --write --no-audit ./\(.formula).rb --version \(.version.latest)"' |
+  bash
