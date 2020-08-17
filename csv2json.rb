@@ -1,5 +1,5 @@
 class Csv2json < Formula
-  desc "A humble CSV tool, friend of jq"
+  desc "Humble CSV tool, friend of jq"
   homepage "https://github.com/josh/csv2json"
   version "1.0.0"
   url "https://github.com/josh/csv2json/archive/v#{version}.tar.gz"
