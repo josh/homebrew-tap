@@ -22,3 +22,27 @@ jobs:
           brew audit --strict --online ./icloud-backup-utils.rb
           brew audit --strict --online ./sort-lines.rb
           brew audit --strict --online ./swift-completions.rb
+
+  bump:
+    runs-on: macos-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Install Homebrew livecheck
+        run: brew tap homebrew/livecheck
+
+      - name: Check if formulas are outdated
+        run: brew livecheck
+        env:
+          HOMEBREW_LIVECHECK_WATCHLIST: brew_livecheck_watchlist
+
+      - name: Commit formula changes
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'joshbot@users.noreply.github.com'
+          git add *.rb
+          git commit --message "Update formulas" || true
+
+      - name: Push changes
+        run: git push
