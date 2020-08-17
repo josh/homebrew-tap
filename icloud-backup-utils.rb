@@ -9,7 +9,7 @@ class IcloudBackupUtils < Formula
     bin.install "icloud-backup"
   end
 
-  plist_options :manual => "icloud-backup"
+  plist_options manual: "icloud-backup"
 
   def plist; <<~EOS
     <?xml version="1.0" encoding="UTF-8"?>
