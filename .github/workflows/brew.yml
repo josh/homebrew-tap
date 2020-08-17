@@ -20,3 +20,4 @@ jobs:
           brew audit --strict --online ./csv2json.rb
           brew audit --strict --online ./displayrcd.rb
           brew audit --strict --online ./icloud-backup-utils.rb
+          brew audit --strict --online ./sort-lines.rb
