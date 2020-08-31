@@ -17,9 +17,6 @@ jobs:
       - name: Install tap
         run: brew tap josh/tap
 
-      - name: Install Homebrew livecheck
-        run: brew tap homebrew/livecheck
-
       - name: Check if formulas are outdated
         run: brew livecheck
         env:
