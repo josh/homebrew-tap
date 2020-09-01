@@ -5,6 +5,10 @@ class BrewUnattendedUpgrade < Formula
   version "0.1.0"
   sha256 "69917e3a76d270be4e4f07ce97f008b3a48e9cf5cc2283e44c7f69797a21918f"
 
+  livecheck do
+    skip "Built into josh/homebrew-tap"
+  end
+
   depends_on "terminal-notifier"
 
   def install
