@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Csv2json < Formula
   desc "Humble CSV tool, friend of jq"
   homepage "https://github.com/josh/csv2json"

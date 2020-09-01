@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class Displayrcd < Formula
   desc "Run a script when your Mac changes displays"
   homepage "https://github.com/josh/displayrcd"

@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 class IcloudBackupUtils < Formula
   desc "Scripts creating backups of iCloud data"
   homepage "https://github.com/josh/icloud-backup-utils"
