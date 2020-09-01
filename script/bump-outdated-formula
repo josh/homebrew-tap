@@ -3,6 +3,20 @@
 set -euf -o pipefail
 set -x
 
-export HOMEBREW_LIVECHECK_WATCHLIST=brew_livecheck_watchlist
-brew livecheck --json --newer-only |
-  jq --raw-output '.[] | "brew bump-formula-pr --dry-run --write --no-audit ./\(.formula).rb --version \(.version.latest)"'
+bump() {
+  LIVECHECK=$(brew livecheck "$1" --json)
+  echo "$LIVECHECK" | jq
+
+  OUTDATED=$(echo "$LIVECHECK" | jq --raw-output '.[0].version.outdated')
+  if [[ "$OUTDATED" == "false" ]]; then
+    return 0
+  fi
+
+  LATEST_VERSION=$(echo "$LIVECHECK" | jq --raw-output '.[0].version.latest')
+
+  brew bump-formula-pr --verbose --dry-run --write --no-audit "$1" --version "$LATEST_VERSION"
+}
+
+bump ./csv2json.rb
+bump ./displayrcd.rb
+bump ./icloud-backup-utils.rb
