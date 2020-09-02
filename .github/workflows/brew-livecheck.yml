@@ -17,11 +17,6 @@ jobs:
       - name: Install tap
         run: brew tap josh/tap
 
-      - name: Check if formulas are outdated
-        run: brew livecheck
-        env:
-          HOMEBREW_LIVECHECK_WATCHLIST: brew_livecheck_watchlist
-
       - name: Update outdated formulas
         run: script/bump-outdated-formula
 
