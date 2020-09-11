@@ -3,9 +3,9 @@
 class SwiftCompletions < Formula
   desc "Swift shell completions"
   homepage "https://swift.org/"
-  url "http://example.com/"
+  url "https://github.com/josh/homebrew-tap/raw/4b9c17f996fd897382ad812a472a551d116f7172/empty.tar"
   version "0.1.0"
-  sha256 "69917e3a76d270be4e4f07ce97f008b3a48e9cf5cc2283e44c7f69797a21918f"
+  sha256 "9bfac43f415467832a8470a10da79435da99c950cd20b7fae458eb2144f0ff7a"
 
   livecheck do
     skip "Unsupported"
