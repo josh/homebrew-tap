@@ -1,6 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
+# :nodoc:
 class IcloudBackupUtils < Formula
   desc "Scripts creating backups of iCloud data"
   homepage "https://github.com/josh/icloud-backup-utils"
