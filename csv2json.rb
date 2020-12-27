@@ -1,6 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
+# :nodoc:
 class Csv2json < Formula
   desc "Humble CSV tool, friend of jq"
   homepage "https://github.com/josh/csv2json"
