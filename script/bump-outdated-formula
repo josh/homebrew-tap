@@ -14,7 +14,7 @@ bump() {
 
   LATEST_VERSION=$(echo "$LIVECHECK" | jq --raw-output '.[0].version.latest')
 
-  brew bump-formula-pr --verbose --dry-run --write --no-audit "$1" --version "$LATEST_VERSION"
+  brew bump-formula-pr --verbose --write --no-audit "$1" --version "$LATEST_VERSION"
 }
 
 bump ./csv2json.rb
