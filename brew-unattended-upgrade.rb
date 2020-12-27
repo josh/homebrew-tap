@@ -1,6 +1,7 @@
 # typed: false
 # frozen_string_literal: true
 
+# :nodoc:
 class BrewUnattendedUpgrade < Formula
   desc "Homebrew unattended upgrade service"
   homepage "https://github.com/josh/homebrew-tap/blob/master/cmd/brew-unattended-upgrade.rb"
