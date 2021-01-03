@@ -9,7 +9,7 @@ class Csv2json < Formula
   sha256 "62ad05ea0855c68497e6bbb0ca59932039ca600dba693593575daf9382d408a9"
 
   def install
-    system "swift", "build", "-c", "release"
+    system "swift", "build", "--disable-sandbox", "-c", "release"
     bin.install ".build/release/csv2json"
   end
 
