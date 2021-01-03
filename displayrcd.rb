@@ -10,7 +10,7 @@ class Displayrcd < Formula
   head "https://github.com/josh/displayrcd.git"
 
   def install
-    system "swift", "build", "-c", "release"
+    system "swift", "build", "--disable-sandbox", "-c", "release"
     bin.install ".build/release/displayrcd"
   end
 
