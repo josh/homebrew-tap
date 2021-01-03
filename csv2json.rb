@@ -5,8 +5,8 @@
 class Csv2json < Formula
   desc "Humble CSV tool, friend of jq"
   homepage "https://github.com/josh/csv2json"
-  url "https://github.com/josh/csv2json/archive/v1.0.0.tar.gz"
-  sha256 "08709cdbcbf06918b14781c72d945c4828a5de02f60d7acc12d292d1d01dffcb"
+  url "https://github.com/josh/csv2json/archive/v1.0.1.tar.gz"
+  sha256 "62ad05ea0855c68497e6bbb0ca59932039ca600dba693593575daf9382d408a9"
 
   def install
     system "swift", "build", "-c", "release"
