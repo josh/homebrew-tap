@@ -85,7 +85,7 @@ if bundle_file
 end
 
 # Disable bootsnap during cleanup
-ENV['HOMEBREW_NO_BOOTSNAP'] = 1
+ENV['HOMEBREW_NO_BOOTSNAP'] = "1"
 
 run! HOMEBREW_BREW_FILE, "cleanup", label: "brew cleanup"
 
