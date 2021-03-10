@@ -5,10 +5,10 @@
 class IpfsTools < Formula
   desc "Scripts for adding and fetching IPFS content"
   homepage "https://ipfs.io/ipns/k51qzi5uqu5dgvnd5164dpo8hh4lyjuyk7i113sx2h2y7ski7i7nq4invwn6ig"
-  url "http://127.0.0.1:8080/ipfs/QmQ47tZFpnzQBMm5Vh6jm6eyRgZALF5DrmjmkNTJFgFHuw"
-  mirror "https://ipfs.io/ipfs/QmQ47tZFpnzQBMm5Vh6jm6eyRgZALF5DrmjmkNTJFgFHuw"
-  version "43"
-  sha256 "36849cd5f29430ce8e3f92ca6acb745392735e58c422b993db4b0ab22e379574"
+  url "http://127.0.0.1:8080/ipfs/QmZ94Vs3WpRNX7mb9rJHmommEoqMHfgFWXbupoq5KV13RL"
+  mirror "https://ipfs.io/ipfs/QmZ94Vs3WpRNX7mb9rJHmommEoqMHfgFWXbupoq5KV13RL"
+  version "51"
+  sha256 "ff1e42e7204bb540c3d3632207f5920634d98c5897a89c86c8d90e91630bc9dc"
   license "MIT"
   head "http://127.0.0.1:8080/ipns/k51qzi5uqu5dgvnd5164dpo8hh4lyjuyk7i113sx2h2y7ski7i7nq4invwn6ig",
     using: :git, branch: "main"
