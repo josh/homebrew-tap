@@ -16,8 +16,10 @@ jobs:
       - name: Update Homebrew
         run: brew update || true
 
-      - name: Install tap
-        run: brew tap josh/tap
+      - name: Link tap
+        run: |
+          mkdir -p  /usr/local/Homebrew/Library/Taps/josh
+          ln -s . /usr/local/Homebrew/Library/Taps/josh/homebrew-tap
 
       - name: Update outdated formulas
         run: script/bump-outdated-formula
