@@ -15,7 +15,7 @@ jobs:
         run: brew update || true
 
       - name: Check out tap
-      - uses: actions/checkout@v2
+        uses: actions/checkout@v2
         with:
           path: "/usr/local/Homebrew/Library/Taps/josh/homebrew-tap"
 
