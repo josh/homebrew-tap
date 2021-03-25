@@ -5,8 +5,8 @@
 class Displayrcd < Formula
   desc "Run a script when your Mac changes displays"
   homepage "https://github.com/josh/displayrcd"
-  url "https://github.com/josh/displayrcd/archive/v0.1.2.tar.gz"
-  sha256 "ba8ac7137b8d2dcc713f54976bab4212b267f055be500d1dece400a4cc9d175c"
+  url "https://github.com/josh/displayrcd/archive/v0.2.0.tar.gz"
+  sha256 "fd1c944ab60b67674d3fd6ec6116736d75d701f175f4147529a236ffbd08eb62"
   head "https://github.com/josh/displayrcd.git"
 
   def install
