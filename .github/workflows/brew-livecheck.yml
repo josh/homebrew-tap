@@ -11,20 +11,18 @@ jobs:
     runs-on: macos-latest
 
     steps:
+      - uses: actions/checkout@v2
+
       - name: Update Homebrew
         run: brew update || true
 
-      - name: Check out tap
-        uses: actions/checkout@v2
-        with:
-          path: "/usr/local/Homebrew/Library/Taps/josh/homebrew-tap"
+      - name: Install tap
+        run: brew tap josh/tap
 
       - name: Update outdated formulas
-        working-directory: "/usr/local/Homebrew/Library/Taps/josh/homebrew-tap"
         run: script/bump-outdated-formula
 
       - name: Commit formula changes
-        working-directory: "/usr/local/Homebrew/Library/Taps/josh/homebrew-tap"
         run: |
           git config --global user.name 'GitHub Actions'
           git config --global user.email 'joshbot@users.noreply.github.com'
@@ -32,5 +30,4 @@ jobs:
           git commit --message "Update formulas" || true
 
       - name: Push changes
-        working-directory: "/usr/local/Homebrew/Library/Taps/josh/homebrew-tap"
         run: git push
