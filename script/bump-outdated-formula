@@ -4,7 +4,7 @@ set -euf -o pipefail
 set -x
 
 bump() {
-  LIVECHECK=$(brew livecheck "$1" --json)
+  LIVECHECK=$(brew livecheck "$1" --json --formula)
   echo "$LIVECHECK" | jq
 
   OUTDATED=$(echo "$LIVECHECK" | jq --raw-output '.[0].version.outdated')
