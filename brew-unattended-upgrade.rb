@@ -50,7 +50,7 @@ class BrewUnattendedUpgrade < Formula
           <key>StandardOutPath</key>
           <string>#{var}/log/brew-unattended-upgrade.log</string>
           <key>StartInterval</key>
-          <integer>3600</integer>
+          <integer>86400</integer>
         </dict>
       </plist>
     EOS
