@@ -20,3 +20,4 @@ bump() {
 bump ./csv2json.rb
 bump ./displayrcd.rb
 bump ./icloud-backup-utils.rb
+bump ./itunes-library-export.rb
