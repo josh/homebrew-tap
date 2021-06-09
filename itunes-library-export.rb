@@ -27,7 +27,7 @@ class ItunesLibraryExport < Formula
           <array>
             <string>#{opt_bin}/itunes-library-export</string>
             <string>--output</string>
-            <string>#{ENV["HOME"]}/Music/iTunes/iTunes Music Library.xml</string>
+            <string>#{ENV["HOME"]}/Music/Music/Music Library.xml</string>
           </array>
           <key>StandardErrorPath</key>
           <string>#{var}/log/itunes-library-export.log</string>
