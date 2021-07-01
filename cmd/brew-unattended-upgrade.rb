@@ -73,7 +73,7 @@ end
 
 run HOMEBREW_BREW_FILE, "doctor",
   label: "brew doctor",
-  notify_on: ->(r) { !r[:success] && !OS::Mac.prerelease? }
+  notify_on: ->(r) { !r[:success] && !OS::Mac.version.prerelease? }
 
 run! HOMEBREW_BREW_FILE, "update", label: "brew update"
 run! HOMEBREW_BREW_FILE, "upgrade", label: "brew upgrade"
