@@ -4,13 +4,13 @@
 # :nodoc:
 class IpfsTools < Formula
   desc "Scripts for adding and fetching IPFS content"
-  homepage "https://ipfs.io/ipns/k51qzi5uqu5dgvnd5164dpo8hh4lyjuyk7i113sx2h2y7ski7i7nq4invwn6ig"
-  url "http://127.0.0.1:8080/ipfs/Qmea5WbbzrNVrjJb3dU8rSovYxpAgoZdKPxAcFmrpNyEX6"
-  mirror "https://ipfs.io/ipfs/Qmea5WbbzrNVrjJb3dU8rSovYxpAgoZdKPxAcFmrpNyEX6"
-  version "75"
-  sha256 "6ef67127d23b03b293d91c26aed0002c3ed5fb8920331d2c5e9262890a771732"
+  homepage "https://ipfs.io/ipns/k51qzi5uqu5dj1ls01edx78x9fqdwxims5ny3cpg5qyi6khil75k8j1ozs92oq"
+  url "http://127.0.0.1:8080/ipfs/QmNhYtbP1KNdjzbacL9rB9bn3QSmFuWjvnXsy1BSpxymqe"
+  mirror "https://ipfs.io/ipfs/QmNhYtbP1KNdjzbacL9rB9bn3QSmFuWjvnXsy1BSpxymqe"
+  version "79"
+  sha256 "622a88e5f11bfe77d7a7456e0d7d0cebc70267162da118c1f8dfd8e879fa4c2d"
   license "MIT"
-  head "http://127.0.0.1:8080/ipns/k51qzi5uqu5dgvnd5164dpo8hh4lyjuyk7i113sx2h2y7ski7i7nq4invwn6ig",
+  head "http://127.0.0.1:8080/ipns/k51qzi5uqu5dj1ls01edx78x9fqdwxims5ny3cpg5qyi6khil75k8j1ozs92oq",
     using: :git, branch: "main"
 
   depends_on "ipfs"
