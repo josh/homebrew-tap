@@ -9,6 +9,8 @@ class Displayrcd < Formula
   sha256 "b3206bb9c48d69b1672a6f1230831684c16f5abeaaf8315dce18a57c822aa9da"
   head "https://github.com/josh/displayrcd.git"
 
+  depends_on xcode: ["12.5", :build]
+
   def install
     system "swift", "build", "--disable-sandbox", "-c", "release"
     bin.install ".build/release/displayrcd"

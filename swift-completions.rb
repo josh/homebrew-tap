@@ -9,6 +9,8 @@ class SwiftCompletions < Formula
   version "0.1.0"
   sha256 "9bfac43f415467832a8470a10da79435da99c950cd20b7fae458eb2144f0ff7a"
 
+  depends_on xcode: ["12.5", :build]
+
   livecheck do
     skip "Unsupported"
   end
