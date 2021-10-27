@@ -7,7 +7,7 @@ class Displayrcd < Formula
   homepage "https://github.com/josh/displayrcd"
   url "https://github.com/josh/displayrcd/archive/v0.2.1.tar.gz"
   sha256 "b3206bb9c48d69b1672a6f1230831684c16f5abeaaf8315dce18a57c822aa9da"
-  head "https://github.com/josh/displayrcd.git"
+  head "https://github.com/josh/displayrcd.git", branch: "main"
 
   depends_on xcode: ["12.5", :build]
 
