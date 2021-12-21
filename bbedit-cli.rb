@@ -3,7 +3,7 @@
 
 # :nodoc:
 class BbeditCli < Formula
-  desc "BBEdit Command Line Tools"
+  desc "BBEdit Command-Line Tools"
   homepage "https://www.barebones.com/products/bbedit/index.html"
   url "https://github.com/josh/homebrew-tap/raw/4b9c17f996fd897382ad812a472a551d116f7172/empty.tar"
   version "0.1.0"
