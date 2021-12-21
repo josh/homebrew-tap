@@ -14,6 +14,7 @@ jobs:
 
       - name: Audit formulas
         run: |
+          brew audit --strict --online --formula ./bbedit-cli.rb
           brew audit --strict --online --formula ./brew-unattended-upgrade.rb
           brew audit --strict --online --formula ./csv2json.rb
           brew audit --strict --online --formula ./displayrcd.rb
