@@ -4,7 +4,7 @@
 # :nodoc:
 class BrewUnattendedUpgrade < Formula
   desc "Homebrew unattended upgrade service"
-  homepage "https://github.com/josh/homebrew-tap/blob/master/cmd/brew-unattended-upgrade.rb"
+  homepage "https://github.com/josh/homebrew-tap/blob/main/cmd/brew-unattended-upgrade.rb"
   url "https://github.com/josh/homebrew-tap/raw/4b9c17f996fd897382ad812a472a551d116f7172/empty.tar"
   version "0.1.0"
   sha256 "9bfac43f415467832a8470a10da79435da99c950cd20b7fae458eb2144f0ff7a"
