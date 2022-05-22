@@ -25,7 +25,7 @@ jobs:
       - name: Commit formula changes
         run: |
           git config --global user.name 'GitHub Actions'
-          git config --global user.email 'joshbot@users.noreply.github.com'
+          git config --global user.email 'actions@users.noreply.github.com'
           git add *.rb
           git commit --message "Update formulas" || true
 
