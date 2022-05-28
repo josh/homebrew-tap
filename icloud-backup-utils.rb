@@ -7,7 +7,7 @@ class IcloudBackupUtils < Formula
   homepage "https://github.com/josh/icloud-backup-utils"
   url "https://github.com/josh/icloud-backup-utils/archive/v0.2.0.tar.gz"
   sha256 "2003ac17751f3663320f68856d788bbeba0d3a3a0e82805d342ffeda69ca5055"
-  head "https://github.com/josh/icloud-backup-utils.git", branch: "master"
+  head "https://github.com/josh/icloud-backup-utils.git", branch: "main"
 
   def install
     bin.install "icloud-backup"
