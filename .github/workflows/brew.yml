@@ -16,6 +16,5 @@ jobs:
         run: |
           brew audit --strict --online --formula ./bbedit-cli.rb
           brew audit --strict --online --formula ./brew-unattended-upgrade.rb
-          brew audit --strict --online --formula ./displayrcd.rb
           brew audit --strict --online --formula ./icloud-backup-utils.rb
           brew audit --strict --online --formula ./swift-completions.rb
