@@ -17,6 +17,5 @@ bump() {
   brew bump-formula-pr --verbose --write --commit --force --no-audit "$1" --version "$LATEST_VERSION"
 }
 
-bump ./displayrcd.rb
 bump ./icloud-backup-utils.rb
 bump ./itunes-library-export.rb
