@@ -78,12 +78,12 @@ run HOMEBREW_BREW_FILE, "doctor",
 run! HOMEBREW_BREW_FILE, "update", label: "brew update"
 run! HOMEBREW_BREW_FILE, "upgrade", label: "brew upgrade"
 
-# if MAS
-#   run! MAS, "upgrade", label: "mas upgrade"
-# else
-#   ohai("mas upgrade")
-#   puts "skipping, mas not installed"
-# end
+if MAS
+  run! MAS, "upgrade", label: "mas upgrade"
+else
+  ohai("mas upgrade")
+  puts "skipping, mas not installed"
+end
 
 if bundle_file
   run! HOMEBREW_BREW_FILE, "bundle", "install", "--no-lock", "--file=#{bundle_file}",
