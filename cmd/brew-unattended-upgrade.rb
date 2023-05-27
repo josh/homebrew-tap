@@ -1,6 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
 MAS = which("mas")
 NOTIFER = which("terminal-notifier")
 bundle_file = ENV["HOMEBREW_BUNDLE_FILE"] || "#{HOMEBREW_PREFIX}/etc/Brewfile"

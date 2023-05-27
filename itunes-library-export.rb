@@ -1,7 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
-# :nodoc:
 class ItunesLibraryExport < Formula
   desc "A command line tool to export iTunes Library XML files"
   homepage "https://github.com/josh/itunes-library-export"

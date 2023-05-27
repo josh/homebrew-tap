@@ -1,7 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
-# :nodoc:
 class SwiftCompletions < Formula
   desc "Swift shell completions"
   homepage "https://swift.org/"

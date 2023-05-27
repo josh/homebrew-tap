@@ -1,7 +1,3 @@
-# typed: false
-# frozen_string_literal: true
-
-# :nodoc:
 class BbeditCli < Formula
   desc "BBEdit Command-Line Tools"
   homepage "https://www.barebones.com/products/bbedit/index.html"
