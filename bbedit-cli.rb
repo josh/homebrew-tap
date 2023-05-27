@@ -27,6 +27,6 @@ class BbeditCli < Formula
   end
 
   test do
-    42
+    system bin/"bbedit", "--help"
   end
 end
