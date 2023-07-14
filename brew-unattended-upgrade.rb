@@ -19,37 +19,13 @@ class BrewUnattendedUpgrade < Formula
     chmod 0755, bin/"brew-unattended-upgrade"
   end
 
-  plist_options manual: "brew unattended-upgrade"
-
-  def plist
-    <<~EOS
-      <?xml version="1.0" encoding="UTF-8"?>
-      <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-      <plist version="1.0">
-        <dict>
-          <key>Label</key>
-          <string>#{plist_name}</string>
-          <key>ProgramArguments</key>
-          <array>
-            <string>#{HOMEBREW_BREW_FILE}</string>
-            <string>unattended-upgrade</string>
-          </array>
-          <key>EnvironmentVariables</key>
-          <dict>
-            <key>PATH</key>
-            <string>/usr/local/bin:/usr/local/sbin:/usr/bin:/bin:/usr/sbin:/sbin</string>
-          </dict>
-          <key>RunAtLoad</key>
-          <true/>
-          <key>StandardErrorPath</key>
-          <string>#{var}/log/brew-unattended-upgrade.log</string>
-          <key>StandardOutPath</key>
-          <string>#{var}/log/brew-unattended-upgrade.log</string>
-          <key>StartInterval</key>
-          <integer>86400</integer>
-        </dict>
-      </plist>
-    EOS
+  service do
+    run [HOMEBREW_BREW_FILE, "unattended-upgrade"]
+    run_type :interval
+    interval 86400
+    environment_variables PATH: std_service_path_env
+    log_path var/"log/brew-unattended-upgrade.log"
+    error_log_path var/"log/brew-unattended-upgrade.log"
   end
 
   test do
