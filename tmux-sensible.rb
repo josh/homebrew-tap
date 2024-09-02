@@ -1,5 +1,5 @@
 class TmuxSensible < Formula
-  desc "basic tmux settings everyone can agree on"
+  desc "Basic tmux settings everyone can agree on"
   homepage "https://github.com/tmux-plugins/tmux-sensible"
   url "https://github.com/tmux-plugins/tmux-sensible/archive/25cb91f42d020f675bb0a2ce3fbd3a5d96119efa.tar.gz"
   version "3.0.0-20-g25cb91f"
