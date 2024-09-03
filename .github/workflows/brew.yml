@@ -7,8 +7,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-        with:
-          path: /opt/homebrew/Library/Taps/josh/homebrew-tap
+
+      - name: Install tap
+        run: |
+          mkdir -p /opt/homebrew/Library/Taps/josh
+          ln -s "$GITHUB_WORKSPACE" "$HOMEBREW_PREFIX/Library/Taps/josh/homebrew-tap"
 
       - name: Print Homebrew taps
         run: brew tap
