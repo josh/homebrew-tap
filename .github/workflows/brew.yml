@@ -28,10 +28,9 @@ jobs:
           brew install-bundler-gems
           brew audit testbottest
 
-      # Fix tap checkout to the correct sha
-      - uses: actions/checkout@v4
-        with:
-          path: /home/linuxbrew/.linuxbrew/Homebrew/Library/Taps/josh/homebrew-tap
+      - name: Fix tap checkout
+        working-directory: ${{ steps.set-up-homebrew.outputs.repository-path }}
+        run: git checkout ${{ github.sha }}
 
       - name: Audit formulas
         run: |
