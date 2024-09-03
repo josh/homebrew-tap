@@ -11,7 +11,7 @@ jobs:
       - name: Install tap
         run: |
           mkdir -p /opt/homebrew/Library/Taps/josh
-          ln -s "$GITHUB_WORKSPACE" "$HOMEBREW_PREFIX/Library/Taps/josh/homebrew-tap"
+          ln -s "$GITHUB_WORKSPACE" "/opt/homebrew/Library/Taps/josh/homebrew-tap"
 
       - name: Print Homebrew taps
         run: brew tap
