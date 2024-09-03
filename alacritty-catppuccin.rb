@@ -5,8 +5,6 @@ class AlacrittyCatppuccin < Formula
   sha256 "7d23546be126ce0651809de72d883ade83bad1e876bcb90ac2c039d2cc39fd3b"
   license "MIT"
 
-  # depends_on "homebrew/cask/alacritty"
-
   def install
     pkgshare.install Dir["*"]
   end
