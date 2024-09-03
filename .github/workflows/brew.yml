@@ -1,0 +1,17 @@
+name: Homebrew
+
+on: [push]
+
+jobs:
+  audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          path: /opt/homebrew/Library/Taps/josh/homebrew-tap
+
+      - name: Print Homebrew taps
+        run: brew tap
+
+      - name: Install Homebrew bundler gems
+        run: brew install-bundler-gems
