@@ -28,9 +28,10 @@ jobs:
           brew install-bundler-gems
           brew audit testbottest
 
-      - name: Fix tap checkout
+      - name: Assert checkout HEAD
         working-directory: ${{ steps.set-up-homebrew.outputs.repository-path }}
-        run: git checkout ${{ github.sha }}
+        run: |
+          [ "$(git rev-parse HEAD)" = "${{ github.sha }}" ]
 
       - name: Audit formulas
         run: |
