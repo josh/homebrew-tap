@@ -10,6 +10,8 @@ jobs:
       HOMEBREW_DEVELOPER: "1"
 
     steps:
+      - uses: actions/checkout@v4
+
       - name: Set up Homebrew
         id: set-up-homebrew
         uses: Homebrew/actions/setup-homebrew@master
@@ -25,13 +27,6 @@ jobs:
       - name: Install Homebrew Bundler RubyGems
         if: steps.cache.outputs.cache-hit != 'true'
         run: brew install-bundler-gems
-
-      - uses: actions/checkout@v4
-
-      - name: Install tap
-        run: |
-          mkdir -p /opt/homebrew/Library/Taps/josh
-          ln -s "$GITHUB_WORKSPACE" "/opt/homebrew/Library/Taps/josh/homebrew-tap"
 
       - name: Print Homebrew taps
         run: brew tap
