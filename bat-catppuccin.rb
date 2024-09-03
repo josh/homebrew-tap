@@ -22,6 +22,6 @@ class BatCatppuccin < Formula
   end
 
   test do
-    assert_empty shell_output(pkgshare / "themes" / "Catppuccin Mocha.tmTheme")
+    assert_predicate (pkgshare / "themes" / "Catppuccin Mocha.tmTheme"), :exist?
   end
 end

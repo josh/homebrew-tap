@@ -18,6 +18,6 @@ class TmuxTokyoNight < Formula
   end
 
   test do
-    assert_empty shell_output(pkgshare / "tmux-tokyo-night.tmux")
+    assert_predicate (pkgshare / "tmux-tokyo-night.tmux"), :exist?
   end
 end

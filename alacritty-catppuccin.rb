@@ -22,6 +22,6 @@ class AlacrittyCatppuccin < Formula
   end
 
   test do
-    assert_empty shell_output(pkgshare / "catppuccin-mocha.toml")
+    assert_predicate (pkgshare / "catppuccin-mocha.toml"), :exist?
   end
 end

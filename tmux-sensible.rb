@@ -20,6 +20,6 @@ class TmuxSensible < Formula
   end
 
   test do
-    assert_empty shell_output(pkgshare / "sensible.tmux")
+    assert_predicate (pkgshare / "sensible.tmux"), :exist?
   end
 end
