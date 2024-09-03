@@ -24,9 +24,7 @@ jobs:
 
       - name: Install Homebrew Bundler RubyGems
         if: steps.cache.outputs.cache-hit != 'true'
-        run: |
-          brew install-bundler-gems
-          brew audit testbottest
+        run: brew install-bundler-gems --groups=audit,style
 
       - name: Audit formulas
         run: |
