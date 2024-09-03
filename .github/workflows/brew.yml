@@ -5,7 +5,12 @@ on: [push]
 jobs:
   audit:
     runs-on: ubuntu-latest
+
     steps:
+      - name: Set up Homebrew
+        id: set-up-homebrew
+        uses: Homebrew/actions/setup-homebrew@master
+
       - uses: actions/checkout@v4
 
       - name: Install tap
@@ -15,6 +20,3 @@ jobs:
 
       - name: Print Homebrew taps
         run: brew tap
-
-      - name: Install Homebrew bundler gems
-        run: brew install-bundler-gems
