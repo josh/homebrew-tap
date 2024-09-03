@@ -28,9 +28,6 @@ jobs:
         if: steps.cache.outputs.cache-hit != 'true'
         run: brew install-bundler-gems
 
-      - name: Print Homebrew taps
-        run: brew tap
-
       - name: Audit formulas
         run: |
           brew audit --strict --online josh/tap/bbedit-cli
