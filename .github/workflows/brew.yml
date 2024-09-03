@@ -35,3 +35,13 @@ jobs:
 
       - name: Print Homebrew taps
         run: brew tap
+
+      - name: Audit formulas
+        run: |
+          brew audit --strict --online josh/tap/bbedit-cli
+          brew audit --strict --online josh/tap/brew-unattended-upgrade
+          brew audit --strict --online josh/tap/itunes-library-export
+          brew audit --strict --online josh/tap/tmux-catppuccin
+          brew audit --strict --online josh/tap/tmux-sensible
+          brew audit --strict --online josh/tap/tmux-tokyo-night
+          brew audit --strict --online josh/tap/tmux-yank
