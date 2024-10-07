@@ -6,7 +6,6 @@ class Iterm2ShellIntegration < Formula
   sha256 "48f9e724868004032c752e952956261128d273f953409da9e13714742a317f4c"
   license "GPL-2.0"
 
-  # depends_on cask: "iterm2"
   keg_only "it should only added to $PATH when using iTerm2"
 
   def install
