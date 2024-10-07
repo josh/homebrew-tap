@@ -4,7 +4,7 @@ class Iterm2ShellIntegration < Formula
   url "https://github.com/gnachman/iTerm2-shell-integration/archive/c2a41928ff1e224ecaa054035331b2a8aa7416a3.tar.gz"
   version "0.1.0"
   sha256 "48f9e724868004032c752e952956261128d273f953409da9e13714742a317f4c"
-  license "GPL-2.0"
+  license "GPL-2.0-only"
 
   keg_only "it should only added to $PATH when using iTerm2"
 
