@@ -1,5 +1,5 @@
 class Runitor < Formula
-  desc "A command runner with healthchecks.io integration"
+  desc "Command runner with healthchecks.io integration"
   homepage "https://github.com/bdd/runitor"
   url "https://github.com/bdd/runitor/releases/download/v1.3.0/runitor-v1.3.0-darwin-arm64"
   version "1.3.0"
