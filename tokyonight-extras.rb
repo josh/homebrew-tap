@@ -1,8 +1,8 @@
 class TokyonightExtras < Formula
   desc "Provides TokyoNight extras for numerous other applications"
   homepage "https://github.com/folke/tokyonight.nvim"
-  url "https://github.com/folke/tokyonight.nvim/archive/refs/tags/v4.8.0.tar.gz"
-  sha256 "a84d4d55ab8bc4529b3599dccb3af31d3657b5a85169ff3f03278736f3694bea"
+  url "https://github.com/folke/tokyonight.nvim/archive/refs/tags/v4.9.0.tar.gz"
+  sha256 "6b93bbd20a553c39b83ab9ab81fc299872023c8369434745629c9b7573920aa2"
   license "Apache-2.0"
 
   def install
