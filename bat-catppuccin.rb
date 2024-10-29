@@ -1,9 +1,9 @@
 class BatCatppuccin < Formula
   desc "Soothing pastel theme for Bat"
   homepage "https://github.com/catppuccin/bat"
-  url "https://github.com/catppuccin/bat/archive/d3feec47b16a8e99eabb34cdfbaa115541d374fc.tar.gz"
+  url "https://github.com/catppuccin/bat/archive/d2bbee4f7e7d5bac63c054e4d8eca57954b31471.tar.gz"
   version "0.1.0"
-  sha256 "b25eb5696c544a44f89e060c5504ee35d56584e10bad627fefaf5e9b4842cf78"
+  sha256 "c10cdfdbc5234dd263856be5a9b5717011c7ab331ba249a67dc96070789171fb"
   license "MIT"
 
   depends_on "bat"
