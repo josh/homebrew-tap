@@ -3,9 +3,8 @@ class GametrackData < Formula
 
   desc "Export GameTrack data to CSV"
   homepage "https://github.com/josh/gametrack-data"
-  url "https://github.com/josh/gametrack-data/archive/bfa4f1d7bd80e0f19d54b14333400664a02bb37d.tar.gz"
-  version "0.1.0"
-  sha256 "62106c30f9abeb6bbdc6aceac42fd02d4087736761db0f788d91abdadc729291"
+  url "https://github.com/josh/gametrack-data/archive/v1.0.0.tar.gz"
+  sha256 "93f71941575a3f4a367659eafd374977beabc3c14f088cf47bc09edcc0b1ce05"
   license "MIT"
 
   depends_on "python@3.12"
@@ -15,6 +14,6 @@ class GametrackData < Formula
   end
 
   test do
-    42
+    system bin/"gametrack-data", "--help"
   end
 end
