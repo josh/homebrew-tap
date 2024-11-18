@@ -1,8 +1,8 @@
 class TmuxCatppuccin < Formula
   desc "Soothing pastel theme for Tmux!"
   homepage "https://github.com/catppuccin/tmux"
-  url "https://github.com/catppuccin/tmux/archive/refs/tags/v2.1.tar.gz"
-  sha256 "f1a8999f75049af2d22a38446495ec26b4333a718c633cf81dea9b53474a794a"
+  url "https://github.com/catppuccin/tmux/archive/refs/tags/v2.1.1.tar.gz"
+  sha256 "d640c7d5a70d305f444c0a63df9d1c1d8395dca39b10acdd888e88e17871189a"
   license "MIT"
 
   depends_on "tmux"
