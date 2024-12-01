@@ -1,8 +1,8 @@
 class TmuxTokyoNight < Formula
   desc "Tokyo Night tmux theme directly inspired from Tokyo Night vim theme"
   homepage "https://github.com/fabioluciano/tmux-tokyo-night"
-  url "https://github.com/fabioluciano/tmux-tokyo-night/archive/refs/tags/v1.9.0.tar.gz"
-  sha256 "2966bb0bf3926478dc1a5acc15f1afa73b68595f23a8101174a42022a9d0bc7a"
+  url "https://github.com/fabioluciano/tmux-tokyo-night/archive/refs/tags/v1.10.0.tar.gz"
+  sha256 "95795c1d6b7b523be5ba5fa373bc72b83c6caee6a4ec556f46be89fad9b3cd5e"
 
   depends_on "tmux"
 
