@@ -1,8 +1,8 @@
 cask "font-consolas" do
   version "1.2"
-  sha256 "19d0d128bbef6292257be7eba610d5722beb82aafc6ca1e8c4d04c5f6dce3e67"
+  sha256 "04b860e674755d3ce48d1fa06b2247fb3fad7010b4cb6ea073f1b3c565ea0353"
 
-  url "https://github.com/misuchiru03/font-consolas-ttf/archive/refs/tags/#{version}.zip"
+  url "https://github.com/misuchiru03/font-consolas-ttf/archive/refs/tags/#{version}.tar.gz"
   name "Consolas"
   homepage "https://github.com/misuchiru03/font-consolas-ttf"
 
