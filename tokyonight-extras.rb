@@ -16,8 +16,8 @@ class TokyonightExtras < Formula
   end
 
   test do
-    assert_predicate (pkgshare / "alacritty"), :exist?
-    assert_predicate (pkgshare / "fzf"), :exist?
-    assert_predicate (pkgshare / "tmux"), :exist?
+    assert_path_exists (pkgshare / "alacritty")
+    assert_path_exists (pkgshare / "fzf")
+    assert_path_exists (pkgshare / "tmux")
   end
 end

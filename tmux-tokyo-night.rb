@@ -18,6 +18,6 @@ class TmuxTokyoNight < Formula
   end
 
   test do
-    assert_predicate (pkgshare / "tmux-tokyo-night.tmux"), :exist?
+    assert_path_exists (pkgshare / "tmux-tokyo-night.tmux")
   end
 end

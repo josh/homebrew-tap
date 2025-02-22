@@ -18,6 +18,6 @@ class TmthemeRosePine < Formula
   end
 
   test do
-    assert_predicate (pkgshare / "rose-pine.tmTheme"), :exist?
+    assert_path_exists (pkgshare / "rose-pine.tmTheme")
   end
 end

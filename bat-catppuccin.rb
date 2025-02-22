@@ -22,6 +22,6 @@ class BatCatppuccin < Formula
   end
 
   test do
-    assert_predicate (pkgshare / "themes" / "Catppuccin Mocha.tmTheme"), :exist?
+    assert_path_exists (pkgshare / "themes" / "Catppuccin Mocha.tmTheme")
   end
 end

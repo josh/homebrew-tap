@@ -19,6 +19,6 @@ class TmuxCatppuccin < Formula
   end
 
   test do
-    assert_predicate (pkgshare / "catppuccin.tmux"), :exist?
+    assert_path_exists (pkgshare / "catppuccin.tmux")
   end
 end

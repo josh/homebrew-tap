@@ -21,6 +21,6 @@ class TmuxYank < Formula
   end
 
   test do
-    assert_predicate (pkgshare / "yank.tmux"), :exist?
+    assert_path_exists (pkgshare / "yank.tmux")
   end
 end

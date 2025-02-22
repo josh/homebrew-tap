@@ -20,6 +20,6 @@ class TmuxSensible < Formula
   end
 
   test do
-    assert_predicate (pkgshare / "sensible.tmux"), :exist?
+    assert_path_exists (pkgshare / "sensible.tmux")
   end
 end
