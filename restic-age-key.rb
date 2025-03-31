@@ -7,8 +7,8 @@ class ResticAgeKey < Formula
   license "MIT"
 
   depends_on "go" => :build
-  depends_on "restic"
   depends_on "age"
+  depends_on "restic"
 
   def install
     ldflags = %W[
