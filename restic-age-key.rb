@@ -1,8 +1,8 @@
 class ResticAgeKey < Formula
   desc "Use asymmetric age keys instead of a password on your restic repository"
   homepage "https://github.com/josh/restic-age-key"
-  url "https://github.com/josh/restic-age-key/archive/refs/tags/v1.2.2.tar.gz"
-  sha256 "821ff0534ba3bfa3296e17eb97b19b0f41c8316c239a3a9231ed2b8c07d62d03"
+  url "https://github.com/josh/restic-age-key/archive/refs/tags/v1.3.0.tar.gz"
+  sha256 "df5963b4d28b59137d06db6d74200a4fdc0ed0b53ab539a18ca69da8aeae9267"
   license "MIT"
 
   depends_on "go" => :build
