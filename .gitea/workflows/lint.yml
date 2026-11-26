@@ -1,0 +1,25 @@
+name: Lint
+
+on: push
+
+permissions:
+  contents: read
+
+jobs:
+  ruby:
+    runs-on: ubuntu-slim-amd64
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+
+      - name: Install Ruby
+        run: |
+          apt-get update
+          apt-get install --yes --no-install-recommends ruby
+
+      - name: Check formula syntax
+        run: |
+          for formula in *.rb; do
+            ruby -c "$formula"
+          done
